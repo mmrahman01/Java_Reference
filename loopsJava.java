@@ -1,5 +1,6 @@
 // loops in Java, for, enhanced for, while, do while, 
-
+// continue skips iteration when true
+// break if true breaks the loop
 
 package java_practice;
 
@@ -13,8 +14,13 @@ public class loopsJava {
 		// for loop
 		
 		for (int i=0; i < 10; i++) {
-			
+						
+			if(i == 5) {
+				
+				continue;  // 5  will not be added
+			}
 			num = num+ i;
+			System.out.println(i);
 		}
 		
 		System.out.println(num);
@@ -24,6 +30,9 @@ public class loopsJava {
 		while(num>0) {
 			
 			num--;
+			if(num < 5) {
+				break;        // exits the loop
+			}
 		}
 		
 		System.out.println("In while loop "+num);
