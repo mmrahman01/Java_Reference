@@ -54,12 +54,7 @@ public class variables{
 	
 	object1.myMethod();							// will print the local variable
 												//... inside method
-	
-	
-	
 
-	
-		
 		
 	} //end main
 	
